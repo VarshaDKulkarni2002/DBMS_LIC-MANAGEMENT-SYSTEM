@@ -68,7 +68,7 @@ expirydate date,
 PRIMARY KEY(custpolicyid),
 FOREIGN KEY(custid) references customer  on delete  cascade,
 FOREIGN KEY(policyid) references policies  on delete cascade,
-FOREIGN KEY(agentid)   references agents on delete cascaed);
+FOREIGN KEY(agentid)   references agents on delete cascade);
 
 
 
@@ -104,7 +104,7 @@ policyid varchar(15),
 monthly numeric(15,2),
 quarterly numeric(15,2),
 halfyearly numeric(15,2),
-annually numeric(15,2)
+annually numeric(15,2),
 FOREIGN KEY(policyid) references policies on delete cascade);
 
 
